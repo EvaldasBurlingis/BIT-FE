@@ -15,3 +15,18 @@ Landing pages built as BIT course homework
 <div>
     <img src="assets/travel.jpg" alt="Travel website"/>
 </div>
+
+---
+
+### Test
+
+#### Requirements
+
+- :heavy_check_mark: Use plain javascript
+- :heavy_check_mark: Load data on the website
+- :heavy_check_mark: User can search dog by breed
+- :heavy_check_mark: User can filter dogs by temperament
+
+<div>
+    <img src="assets/js-test.png" alt=""/>
+</div>
