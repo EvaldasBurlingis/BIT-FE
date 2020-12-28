@@ -1,0 +1,13 @@
+//--------------------------
+//      PARALlAX
+//--------------------------
+
+.parallax {
+  background-image: url('../img/feet.png');
+  height: 80vh;
+  @apply w-full;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

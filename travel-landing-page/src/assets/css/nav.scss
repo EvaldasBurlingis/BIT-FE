@@ -1,0 +1,16 @@
+.nav {
+  @apply py-6;
+
+  &--brand {
+    @apply text-white;
+    @apply font-bold;
+    @apply text-xl;
+    @apply tracking-tight;
+  }
+
+  .nav--link {
+    @apply text-white;
+    @apply text-sm;
+    @apply ml-4;
+  }
+}

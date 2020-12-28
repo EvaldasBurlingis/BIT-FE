@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Oswald';
+}
+
+@import './base.scss';
+@import './nav.scss';
+@import './components.scss';

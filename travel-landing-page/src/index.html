@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tailwind Starter Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/styles.scss" rel="stylesheet" />
+  </head>
+  <body class="font-primary">
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="wrapper w-full px-4 xl:px-0">
+          <nav class="nav flex justify-between items-center">
+            <div class="flex items-baseline">
+              <a href="/" class="nav--brand">TravelCream</a>
+              <ul class="hidden md:inline-block md:flex">
+                <li class="text-white text-sm ml-4 font-medium">
+                  <a href="/">Flights</a>
+                </li>
+                <li class="nav--link"><a href="/">Hotels</a></li>
+                <li class="nav--link"><a href="/">Trips</a></li>
+                <li class="nav--link"><a href="/">Activity</a></li>
+                <li class="nav--link"><a href="/">Deals</a></li>
+              </ul>
+            </div>
+            <a
+              href="/"
+              class="border border-white rounded-sm px-8 py-1 text-sm text-white font-semibold hover:bg-white hover:text-black hover:shadow-xl"
+              >Login</a
+            >
+          </nav>
+        </div>
+        <div
+          class="max-w-6xl mx-auto flex-1 flex flex-col items-center justify-center"
+        >
+          <h1
+            class="text-white font-bold text-3xl md:text-5xl lg:text-6-xl tracking-tight text-center"
+          >
+            Do you want to visit Paris?
+          </h1>
+          <p class="text-white font-medium text-xl xl:text-3xl tracking-tight">
+            Why not?
+          </p>
+        </div>
+      </section>
+      <!-- Flights section -->
+      <section class="wrapper pb-16 px-4 xl:px-0">
+        <form action="" class="landing-form">
+          <input
+            class="landing-form--input placeholder-gray-800"
+            type="text"
+            placeholder="Where are you leaving from?"
+          />
+          <input
+            class="landing-form--input placeholder-gray-800"
+            type="text"
+            placeholder="Where do you want to go?"
+          />
+          <input
+            class="landing-form--input placeholder-gray-800"
+            type="text"
+            placeholder="Date"
+          />
+          <input class="landing-form--button" type="button" value="Search" />
+        </form>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="section-heading">Flights</h2>
+          <ul class="flight-filters">
+            <li class="flight-filters--item__active">Non stop</li>
+            <li class="flight-filters--item">Best Price</li>
+            <li class="flight-filters--item">Airline</li>
+            <li class="flight-filters--item">Schedule</li>
+          </ul>
+        </div>
+        <div class="overflow-x-auto w-full">
+          <table class="table-auto w-full mb-6">
+            <thead>
+              <tr class="border-b border-gray-300">
+                <th
+                  class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0"
+                  colspan="2"
+                >
+                  Airline
+                </th>
+                <th class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0">
+                  Date
+                </th>
+                <th class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0">
+                  Departure
+                </th>
+                <th class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0">
+                  Arrival
+                </th>
+                <th class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0">
+                  Time
+                </th>
+                <th class="py-2 text-left text-sm font-medium text-gray-900 pr-20 md:pr-4 lg:pr-0">
+                  Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6"
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-300">
+                <td class="py-6">
+                  <img src="/img/turkish-airlines.svg" alt="" class="w-8 h-8 hidden md:block" />
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800"
+                    >Turkish Airlines</span
+                  >
+                  <span class="text-sm text-gray-600">TA1627</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">03/11/2017</span>
+                  <span class="text-sm text-gray-600">In 3 days</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Paris (CDG)</span>
+                  <span class="text-sm text-gray-600">07:15</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">Miami</span>
+                  <span class="text-sm text-gray-600">11:45</span>
+                </td>
+                <td class="py-6">
+                  <span class="block text-sm text-gray-800">08:45</span>
+                  <span class="text-sm text-gray-600">CDG - MIA</span>
+                </td>
+                <td class="py-6">
+                  <button
+                    class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+                  >
+                    870 $
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <span
+            class="block text-right text-gray-600 hover:text-primary cursor-pointer"
+            >See all flights</span
+          >
+        </div>
+      </section>
+      <!-- Hotels section -->
+      <section class="wrapper pb-16 px-4 xl:px-0">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="section-heading">Hotels</h2>
+          <ul class="flight-filters">
+            <li class="flight-filters--item__active">Best Price</li>
+            <li class="flight-filters--item">Distance</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel2.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel3.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel2.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel5.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+          <article
+            class="border border-gray-300 hover:border-gray-400 hover:shadow-md"
+          >
+            <img src="/img/hotel6.jpg" alt="" />
+            <div class="p-4">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">
+                Hotel Paris Quest Acheres
+              </h3>
+              <div class="flex justify-between text-gray-600 text-sm mb-8">
+                <span>12.3 km</span>
+                <span>Free Wi - Fi</span>
+              </div>
+              <button
+                class="hover:bg-primary hover:text-white border border-primary text-sm px-8 py-2 text-primary font-medium rounded-md"
+              >
+                30 $
+              </button>
+            </div>
+          </article>
+        </div>
+        <span
+          class="block text-right text-gray-600 hover:text-primary cursor-pointer mt-8"
+          >See all hotels</span
+        >
+      </section>
+      <!-- Attractions -->
+      <section class="wrapper pb-16 px-4 xl:px-0">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="section-heading">Attractions</h2>
+          <ul class="flight-filters">
+            <li class="flight-filters--item__active">All</li>
+            <li class="flight-filters--item">Shoppings</li>
+            <li class="flight-filters--item">Shows</li>
+            <li class="flight-filters--item">Parks</li>
+            <li class="flight-filters--item">Circuits</li>
+            <li class="flight-filters--item">Museums</li>
+            <li class="flight-filters--item">Monuments</li>
+          </ul>
+        </div>
+        <div class="attractions-grid">
+          <div class="attraction attraction-1">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+          <div class="attraction attraction-2">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+          <div class="attraction attraction-3">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+          <div class="attraction attraction-4">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+          <div class="attraction attraction-5">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+          <div class="attraction attraction-6">
+            <div class="attraction--inner"><p>Louvres</p></div>
+          </div>
+        </div>
+        <span
+          class="block text-right text-gray-600 hover:text-primary cursor-pointer mt-8"
+          >See all attractions</span
+        >
+      </section>
+      <!-- Trips -->
+      <section class="wrapper pb-16 px-4 xl:px-0">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="section-heading">Trips</h2>
+          <ul class="flight-filters">
+            <li class="flight-filters--item__active">Best Trips</li>
+            <li class="flight-filters--item">Popularity</li>
+          </ul>
+        </div>
+        <section>
+          <article
+            class="border border-gray-300 mb-6 flex flex-col lg:flex-row lg:h-56"
+          >
+            <div
+              class="w-full lg:w-1/4 h-40 lg:h-full bg-cover bg-no-repeat bg-center"
+              style="background-image: url('/img/paris1.jpg')"
+            ></div>
+            <div
+              class="px-6 py-4 w-full lg:w-3/4 flex flex-col items-start justify-center"
+            >
+              <h4
+                class="text-gray-900 text-base tracking-tight font-medium mb-4"
+              >
+                Acces prioritaire au sommet de la tour Eiffel et hote
+              </h4>
+              <p class="text-sm text-gray-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                quos corporis? Suscipit, ad odit, nesciunt illo nostrum, quam
+                amet id numquam repudiandae dignissimos voluptatum! Dolorum
+                itaque ratione eos laborum ullam placeat odit tenetur quo
+                deserunt sapiente ipsum, eveniet reprehenderit expedita quaerat
+                aspernatur accusantium atque labore. Quasi earum suscipit
+                aspernatur dicta accusamus nemo, inventore deserunt nostrum et
+                dolorem fugiat optio ullam, autem quidem nam eius nulla totam
+                itaque modi. Temporibus illum quisquam soluta suscipit
+                recusandae provident odit laboriosam facere impedit atque.
+              </p>
+            </div>
+          </article>
+          <article class="border border-gray-300 mb-6 flex flex-col lg:flex-row lg:h-56"">
+            <div
+              class="w-full lg:w-1/4 h-40 lg:h-full bg-cover bg-no-repeat bg-center"
+              style="background-image: url('/img/paris1.jpg')"
+            ></div>
+            <div
+              class="px-6 py-4 w-full lg:w-3/4 flex flex-col items-start justify-center"
+            >
+              <h4
+                class="text-gray-900 text-base tracking-tight font-medium mb-4"
+              >
+                Acces prioritaire au sommet de la tour Eiffel et hote
+              </h4>
+              <p class="text-sm text-gray-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                quos corporis? Suscipit, ad odit, nesciunt illo nostrum, quam
+                amet id numquam repudiandae dignissimos voluptatum! Dolorum
+                itaque ratione eos laborum ullam placeat odit tenetur quo
+                deserunt sapiente ipsum, eveniet reprehenderit expedita quaerat
+                aspernatur accusantium atque labore. Quasi earum suscipit
+                aspernatur dicta accusamus nemo, inventore deserunt nostrum et
+                dolorem fugiat optio ullam, autem quidem nam eius nulla totam
+                itaque modi. Temporibus illum quisquam soluta suscipit
+                recusandae provident odit laboriosam facere impedit atque.
+              </p>
+            </div>
+          </article>
+          <article class="border border-gray-300 mb-6 flex flex-col lg:flex-row lg:h-56"">
+            <div
+              class="w-full lg:w-1/4 h-40 lg:h-full bg-cover bg-no-repeat bg-center"
+              style="background-image: url('/img/paris1.jpg')"
+            ></div>
+            <div
+              class="px-6 py-4 w-full lg:w-3/4 flex flex-col items-start justify-center"
+            >
+              <h4
+                class="text-gray-900 text-base tracking-tight font-medium mb-4"
+              >
+                Acces prioritaire au sommet de la tour Eiffel et hote
+              </h4>
+              <p class="text-sm text-gray-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                quos corporis? Suscipit, ad odit, nesciunt illo nostrum, quam
+                amet id numquam repudiandae dignissimos voluptatum! Dolorum
+                itaque ratione eos laborum ullam placeat odit tenetur quo
+                deserunt sapiente ipsum, eveniet reprehenderit expedita quaerat
+                aspernatur accusantium atque labore. Quasi earum suscipit
+                aspernatur dicta accusamus nemo, inventore deserunt nostrum et
+                dolorem fugiat optio ullam, autem quidem nam eius nulla totam
+                itaque modi. Temporibus illum quisquam soluta suscipit
+                recusandae provident odit laboriosam facere impedit atque.
+              </p>
+            </div>
+          </article>
+        </section>
+        <span
+          class="block text-right text-gray-600 hover:text-primary cursor-pointer mt-8"
+          >See all trips</span
+        >
+      </section>
+    </main>
+    <footer class="wrapper pb-16 flex flex-col md:flex-row px-4 xl:px-0">
+      <div class="w-full md:w-1/4 mb-4 md:mb-0">
+        <h5 class="section-heading mb-2 md:mb-6">Cities</h5>
+        <ul class="text-gray-700">
+          <li class="mb-2">Paris</li>
+          <li class="mb-2">Miami</li>
+          <li class="mb-2">London</li>
+          <li class="mb-2">Madrid</li>
+          <li class="mb-2">Tokyo</li>
+          <li class="mb-2">Pekin</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/4 mb-4 md:mb-0">
+        <h5 class="section-heading mb-2 md:mb-6">Explore</h5>
+        <ul class="text-gray-700">
+          <li class="mb-2">Register</li>
+          <li class="mb-2">Login</li>
+          <li class="mb-2">Assistance</li>
+          <li class="mb-2">Eco</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/4 mb-4 md:mb-0">
+        <h5 class="section-heading mb-2 md:mb-6">About us</h5>
+        <ul class="text-gray-700">
+          <li class="mb-2">About TravelCream</li>
+          <li class="mb-2">Careers</li>
+          <li class="mb-2">Blog</li>
+          <li class="mb-2">Privacy Policy</li>
+          <li class="mb-2">Terms of Usage</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/4 mb-4 md:mb-0">
+        <h5 class="section-heading mb-2 md:mb-6">Contact</h5>
+        <p class="text-gray-700">Feel free to get in touch via email</p>
+        <a href="/" class="text-primary">support@travelcream.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

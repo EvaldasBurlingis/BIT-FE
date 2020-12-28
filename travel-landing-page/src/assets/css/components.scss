@@ -1,0 +1,142 @@
+.hero {
+  min-height: 60vh;
+  height: 100%;
+  background-image: url('/img/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  @apply flex;
+  @apply flex-col;
+
+  @screen xl {
+    min-height: 80vh;
+    height: 100%;
+  }
+}
+
+.flight-filters {
+  @apply hidden;
+
+  @screen md {
+    @apply flex;
+  }
+
+  &--item {
+    @apply ml-4;
+    @apply text-gray-600;
+    cursor: pointer;
+
+    &__active {
+      color: #ff4b64;
+    }
+
+    &:hover {
+      color: #ff4b64;
+    }
+  }
+}
+
+.attractions-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd'
+    'e'
+    'f';
+
+  @screen md {
+    grid-template-areas:
+      'a b'
+      'c d'
+      'e f';
+  }
+
+  @screen xl {
+    grid-template-areas:
+      'a b b'
+      'a c c'
+      'd e f';
+  }
+
+  .attraction {
+    position: relative;
+
+    &--inner {
+      position: absolute;
+      @apply top-0;
+      @apply left-0;
+      background-color: rgba(0, 0, 0, 0.6);
+      @apply w-full;
+      @apply h-full;
+      @apply flex;
+      @apply items-center;
+      @apply justify-center;
+      transition: all 200ms;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      p {
+        @apply text-white;
+        @apply font-medium;
+        @apply text-sm;
+      }
+    }
+  }
+  .attraction-1 {
+    grid-area: a;
+    background-image: url('/img/paris1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .attraction-2 {
+    grid-area: b;
+    @apply h-64;
+    background-image: url('/img/paris2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .attraction-3 {
+    grid-area: c;
+    @apply h-64;
+    background-image: url('/img/paris3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .attraction-4 {
+    grid-area: d;
+    @apply h-64;
+    background-image: url('/img/paris4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .attraction-5 {
+    grid-area: e;
+    @apply h-64;
+    background-image: url('/img/paris5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .attraction-6 {
+    grid-area: f;
+    @apply h-64;
+    background-image: url('/img/paris6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

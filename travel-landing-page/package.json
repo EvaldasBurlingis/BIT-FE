@@ -1,0 +1,29 @@
+{
+  "name": "tailwindcss-parcel-starter",
+  "version": "1.0.0",
+  "description": "A simple tailwind starter project with parcel",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "prod": "npx parcel build src/index.html"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/img/",
+        "staticOutDir": "img/"
+      }
+    ]
+  },
+  "repository": "https://github.com/SantiMA10/tailwindcss-parcel-starter.git",
+  "author": "Santi <santiagomartinagra@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "postcss": "^7.0.32",
+    "sass": "^1.26.11",
+    "tailwindcss": "^1.8.10",
+    "typescript": "^3.9.7"
+  }
+}

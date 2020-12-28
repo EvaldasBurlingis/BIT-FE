@@ -1,0 +1,33 @@
+.landing-form {
+  @apply flex;
+  @apply flex-col;
+  // @apply h-12;
+  // @apply mb-16;
+  @apply -mt-6;
+  @apply shadow-xl;
+  @apply mb-8;
+
+  &--input {
+    @apply border;
+    @apply border-gray-300;
+    @apply px-6;
+    @apply py-2;
+  }
+
+  &--button {
+    @apply border;
+    @apply px-6;
+    @apply py-2;
+    border-color: #ff4b64;
+    background-color: #ff4b64;
+    @apply text-white;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  @screen lg {
+    @apply flex-row;
+  }
+}
